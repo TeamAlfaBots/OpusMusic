@@ -1,0 +1,48 @@
+# ╔══════════════════════════════════════════════╗
+# ║               OpusMusic Bot                 ║
+# ║        Advanced Telegram Music System       ║
+# ╚══════════════════════════════════════════════╝
+#
+#  Copyright © 2026 Opus
+#  Licensed under the Opus Software License.
+#
+#  Developed for high performance music streaming,
+#  voice chat management and Telegram automation.
+#
+#  Project: OpusMusic
+#  Powered by AlfaBots
+
+
+
+from dataclasses import dataclass
+
+
+@dataclass
+class Media:
+    id: str
+    duration: str = "00:00"
+    duration_sec: int = 0
+    file_path: str = None
+    message_id: int = 0
+    title: str = None
+    url: str = None
+    time: int = 0
+    user: str = None
+    video: bool = False
+
+
+@dataclass
+class Track:
+    id: str
+    channel_name: str = None
+    duration: str = "00:00"
+    duration_sec: int = 0
+    title: str = None
+    url: str = None
+    file_path: str = None
+    message_id: int = 0
+    time: int = 0
+    thumbnail: str = None
+    user: str = None
+    view_count: str = None
+    video: bool = False
