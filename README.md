@@ -1,43 +1,76 @@
-<p align="center">
-  <img src="https://files.catbox.moe/oc0vh3.svg" alt="OpusMusic Banner" width="100%">
+<div align="center">
+
+<img src="https://files.catbox.moe/oc0vh3.svg" width="100%" alt="OpusMusic Banner"/>
+
+<br>
+
+<h1>🎵 OpusMusic</h1>
+
+<p>
+High Performance Telegram Music Bot Built With Pyrogram & Py-TgCalls
 </p>
 
-<h1 align="center">🎵 OpusMusic</h1>
-
-<p align="center">
- Powerful Telegram Music Bot Built Using Pyrogram & PyTgCalls
+<p>
+Supports YouTube, Spotify, Apple Music, SoundCloud & Live Streams
 </p>
 
-<p align="center">
+<br>
+
+<a href="https://github.com/TeamAlfaBots/OpusMusic/stargazers">
+  <img src="https://img.shields.io/github/stars/TeamAlfaBots/OpusMusic?style=for-the-badge&color=8b5cf6&logo=github">
+</a>
+
+<a href="https://github.com/TeamAlfaBots/OpusMusic/network/members">
+  <img src="https://img.shields.io/github/forks/TeamAlfaBots/OpusMusic?style=for-the-badge&color=06b6d4&logo=github">
+</a>
+
+<a href="https://www.python.org">
   <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/Telegram-MusicBot-2ea44f?style=for-the-badge&logo=telegram">
-  <img src="https://img.shields.io/badge/Platform-VPS%20|%20Docker%20|%20Railway-purple?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/TeamAlfaBots/OpusMusic?style=for-the-badge">
-</p>
+</a>
+
+<a href="#">
+  <img src="https://img.shields.io/badge/Powered%20By-AlfaBots-purple?style=for-the-badge">
+</a>
+
+</div>
 
 ---
 
 # ✨ Features
 
-```diff
-+ Voice Chat Music Streaming
-+ High Quality Audio Playback
-+ YouTube Search & Play
-+ Queue System
-+ Pause / Resume / Skip / Stop
-+ Loop & Seek Support
-+ Multi Language Support
-+ Broadcast System
-+ Fast & Optimized
-+ Modular Plugin Structure
-+ Docker Ready
-+ Railway / VPS / Heroku Support
+<table>
+<tr>
+<td>🎧 High Quality Audio Streaming</td>
+<td>⚡ Fast & Optimized Playback</td>
+</tr>
+
+<tr>
+<td>🔎 YouTube Search & Direct Play</td>
+<td>📜 Smart Queue Management</td>
+</tr>
+
+<tr>
+<td>⏯ Pause / Resume / Skip</td>
+<td>🔁 Loop & Seek Support</td>
+</tr>
+
+<tr>
+<td>🌍 Multi Language Support</td>
+<td>📢 Broadcast System</td>
+</tr>
+
+<tr>
+<td>🐳 Docker Ready</td>
+<td>☁️ Railway / VPS / Heroku Deploy</td>
+</tr>
+</table>
 
 ---
 
-📂 Project Structure
+# 📂 Project Structure
 
-OpusMusic-main/
+```bash
+OpusMusic/
 │
 ├── opus/
 │   ├── core/
@@ -55,36 +88,37 @@ OpusMusic-main/
 
 ---
 
-🚀 VPS Deployment
+🚀 Deploy On VPS
 
-1️⃣ Install Dependencies
+1️⃣ Install Required Packages
 
-sudo apt update && sudo apt install ffmpeg git python3 python3-pip -y
-
----
-
-2️⃣ Upload Project
-
-unzip OpusMusic-main.zip
-cd OpusMusic-main
+sudo apt update
+sudo apt install ffmpeg git python3 python3-pip -y
 
 ---
 
-3️⃣ Install Python Packages
+2️⃣ Clone Repository
 
-Since this project uses "pyproject.toml":
+git clone https://github.com/TeamAlfaBots/OpusMusic
+cd OpusMusic
+
+---
+
+3️⃣ Install Python Dependencies
+
+«This project uses "pyproject.toml"»
 
 pip3 install -U pip setuptools wheel
 pip install .
 
 ---
 
-4️⃣ Setup Environment Variables
+4️⃣ Configure Environment Variables
 
 cp sample.env .env
 nano .env
 
-Fill This:
+Fill Required Variables:
 
 API_ID=
 API_HASH=
@@ -92,18 +126,7 @@ BOT_TOKEN=
 MONGO_DB_URI=
 OWNER_ID=
 STRING_SESSION=
-
----
-
-🔑 Required Variables
-
-Variable| Description
-API_ID| Telegram API ID
-API_HASH| Telegram API HASH
-BOT_TOKEN| Telegram Bot Token
-MONGO_DB_URI| MongoDB Database URL
-OWNER_ID| Your Telegram User ID
-STRING_SESSION| Assistant Account String Session
+LOGGER_ID=
 
 ---
 
@@ -123,17 +146,18 @@ Build Docker Image
 
 docker build -t opusmusic .
 
----
+Run Docker Container
 
-Run Container
-
-docker run -d --name opusmusic --env-file .env opusmusic
+docker run -d \
+--name opusmusic \
+--env-file .env \
+opusmusic
 
 ---
 
 ☁️ Railway Deployment
 
-Steps
+Easy Steps
 
 1. Upload Project To GitHub
 2. Open Railway
@@ -146,13 +170,20 @@ Steps
 
 ☁️ Heroku Deployment
 
-Steps
+<div align="center"><a href="https://dashboard.heroku.com/new">
+  <img src="https://img.shields.io/badge/Deploy%20To-Heroku-7952B3?style=for-the-badge&logo=heroku&logoColor=white">
+</a></div>---
 
-1. Fork Repository
-2. Create Heroku App
-3. Connect GitHub Repository
-4. Add Config Vars
-5. Deploy
+⚙️ Environment Variables
+
+Variable| Description
+API_ID| Telegram API ID
+API_HASH| Telegram API HASH
+BOT_TOKEN| Telegram Bot Token
+MONGO_DB_URI| MongoDB Database URL
+OWNER_ID| Telegram User ID
+STRING_SESSION| Assistant Session String
+LOGGER_ID| Log Group ID
 
 ---
 
@@ -160,66 +191,64 @@ Steps
 
 Command| Description
 /play| Play Music
-/skip| Skip Current Song
-/pause| Pause Music
-/resume| Resume Music
+/vplay| Play Video
+/pause| Pause Playback
+/resume| Resume Playback
+/skip| Skip Current Track
 /stop| Stop Streaming
 /queue| Show Queue
-/ping| Check Bot Speed
-/broadcast| Broadcast Message
+/seek| Seek Stream
+/ping| Check Ping
 
 ---
 
-⚡ Powered By
+💻 Tech Stack
 
+- Python 3.11
 - Pyrogram
-- PyTgCalls
+- Py-TgCalls
 - MongoDB
 - FFmpeg
-- Python 3.11
+- Docker
 
 ---
 
 📌 Recommended VPS
 
-Minimum
-
-- 1 GB RAM
-- 1 vCPU
-
-Recommended
-
-- 2 GB RAM
-- Ubuntu 22.04
+Type| Specs
+Minimum| 1GB RAM • 1 vCPU
+Recommended| 2GB RAM • Ubuntu 22.04
 
 ---
 
 ❤️ Credits
 
 - Pyrogram
-- PyTgCalls
+- Py-TgCalls
+- FFmpeg
 - Telegram
 
 ---
 
 📄 License
 
-This Project Is Licensed Under MIT License.
+This project is licensed under the MIT License.
 
 ---
 
-⭐ Support
+🌟 Support The Project
 
-If You Like This Project:
+If you like this project:
 
-- Star The Repository
-- Fork The Project
-- Share With Friends
+- ⭐ Star the Repository
+- 🍴 Fork the Repository
+- 📢 Share with Friends
 
 ---
 
-👑 Developed By
-
-Team AlfaBots
+<div align="center">👑 Developed By Team AlfaBots
 
 Powered By AlfaBots
+
+</div>
+```
