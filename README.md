@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://files.catbox.moe/oc0vh3.svg" width="720" height="auto" alt="OpusMusic Banner"/>
+<img src="https://files.catbox.moe/4dc4qx.svg" width="720" height="auto" alt="OpusMusic Banner"/>
 
 <h2>OpusMusic</h2>
 
