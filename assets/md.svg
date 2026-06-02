@@ -1,0 +1,64 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Background -->
+<rect width="1280" height="640" rx="32" fill="#0D1117"/>
+
+<!-- Glow Effects -->
+<circle cx="250" cy="170" r="180" fill="#7C3AED" fill-opacity="0.35"/>
+<circle cx="1080" cy="520" r="220" fill="#06B6D4" fill-opacity="0.25"/>
+
+<!-- Main Title -->
+<text
+x="80"
+y="240"
+fill="white"
+font-size="90"
+font-family="Arial"
+font-weight="700">
+🎵 OpusMusic
+</text>
+
+<!-- Subtitle -->
+<text
+x="85"
+y="325"
+fill="#9CA3AF"
+font-size="34"
+font-family="Arial">
+Modern Telegram Music Bot
+</text>
+
+<text
+x="85"
+y="375"
+fill="#9CA3AF"
+font-size="28"
+font-family="Arial">
+Powered By Pyrogram & PyTgCalls
+</text>
+
+<!-- Button -->
+<rect
+x="85"
+y="455"
+width="270"
+height="74"
+rx="18"
+fill="#7C3AED"/>
+
+<!-- Button Text -->
+<text
+x="122"
+y="500"
+fill="white"
+font-size="28"
+font-family="Arial"
+font-weight="600">
+Powered By AlfaBots
+</text>
+
+<!-- Decorative Lines -->
+<rect x="82" y="410" width="420" height="4" rx="2" fill="#7C3AED"/>
+<rect x="82" y="420" width="300" height="4" rx="2" fill="#06B6D4"/>
+
+</svg>
