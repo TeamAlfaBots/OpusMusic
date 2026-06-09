@@ -39,7 +39,7 @@ class Config:
         ]
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
         self.PING_IMG = getenv("PING_IMG", "https://files.catbox.moe/ynwsxi.png")
-        self.START_IMG = getenv("START_VEDIO", "https://files.catbox.moe/m4jeoo.jpg")
+        self.START_VIDEO = getenv("START_VIDEO", "").split()
 
     def check(self):
         missing = [
@@ -49,3 +49,4 @@ class Config:
         ]
         if missing:
             raise SystemExit(f"Missing required environment variables: {', '.join(missing)}")
+            
