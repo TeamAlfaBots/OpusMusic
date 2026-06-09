@@ -89,8 +89,8 @@ async def play_hndlr(
     except Exception:
         pass
 
-    sent = await m.reply_text(
-        m.lang["play_searching"]
+    sent = await m.reply_sticker(
+        sticker="CAACAgUAAxkBAAERW8ZqJv9SmO0qLgHgtlJzIL4aW_g7ZgACyicAAvIweFT31ngujeLjFDsE"
     )
 
     file = None
