@@ -101,7 +101,7 @@ async def start(
     )
 
     await message.reply_photo(
-        photo=config.START_IMG,
+        photo=config.START_VIDEO,
         caption=_text,
         reply_markup=key,
         quote=not private,
